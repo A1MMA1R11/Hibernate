@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>HIBERNATE_practical</groupId>
+  <artifactId>hibernate_CRUD_OPERATIONS_create</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <name>hibernate_CRUD_OPERATIONS_create Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  
+  <!-- adding properties to make use of Java 17-->
+  <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<maven.compiler.release>17</maven.compiler.release>
+  </properties>
+  
+  <dependencies> 
+  
+  <!-- adding sql connector for MySQL from maven repository -->
+  <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>8.0.33</version>
+	</dependency>
+
+	<!-- adding jakarta servlet-->
+	<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+	<dependency>
+	    <groupId>jakarta.servlet</groupId>
+	    <artifactId>jakarta.servlet-api</artifactId>
+	    <version>6.1.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<!-- adding jakarta server pages API-->
+	<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp/jakarta.servlet.jsp-api -->
+	<dependency>
+	    <groupId>jakarta.servlet.jsp</groupId>
+	    <artifactId>jakarta.servlet.jsp-api</artifactId>
+	    <version>4.0.0</version>
+	    <scope>provided</scope>
+	</dependency>
+
+	<!-- adding hibernate EntityManager Relocation-->
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-entitymanager</artifactId>
+	    <version>5.6.15.Final</version>
+	</dependency>
+	
+	<!-- adding hibernate ORM hibernate core-->
+	<!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.6.10.Final</version>
+	</dependency>
+	
+	<!-- adding javax.xml.bind.jaxbexception-->
+	<!-- https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
+	<dependency>
+	    <groupId>javax.xml.bind</groupId>
+    	<artifactId>jaxb-api</artifactId>
+    	<version>2.3.1</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-core -->
+	<dependency>
+	    <groupId>com.sun.xml.bind</groupId>
+    	<artifactId>jaxb-core</artifactId>
+    	<version>2.3.0.1</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-impl -->
+	<dependency>
+	    <groupId>com.sun.xml.bind</groupId>
+    	<artifactId>jaxb-impl</artifactId>
+    	<version>2.3.2</version>
+	</dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+  </dependencies>
+  
+  <build>
+  <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+        </resource>
+    </resources>
+    <finalName>hibernate_CRUD_OPERATIONS_create</finalName>
+  </build>
+</project>
